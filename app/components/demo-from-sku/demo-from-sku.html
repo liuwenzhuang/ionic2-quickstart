@@ -1,0 +1,16 @@
+<!--
+  Generated template for the DemoFromSku component.
+
+  See https://angular.io/docs/ts/latest/api/core/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<div>
+	<h2>Demo Form: Sku</h2>
+	<form #f='ngForm' (ngSubmit)='onSubmit(f.value)'>
+		<div>
+			<label for='skuInput'>SKU</label>
+			<input type='text' id='skuInput' placeholder="SKU" ngControl='sku'>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+</div>

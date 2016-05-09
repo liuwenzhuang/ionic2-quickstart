@@ -1,0 +1,10 @@
+.home {
+  .twitter_button {
+  	background-color: color($colors, twitter, base);
+  	color: color($colors, twitter, contrast);
+  }
+  .twitter_button:hover:not(.disable-hover) {
+  	background-color: color($colors, twitter, base);
+  	opacity: 0.5;
+  }
+}

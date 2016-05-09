@@ -1,0 +1,30 @@
+.card {
+	.card-background {
+		ion-card {
+			position: relative;
+			text-align: center;
+		}
+
+		.card-title {
+			position: absolute;
+			top: 36%;
+			font-size: 2em;
+			width: 100%;
+			font-weight: bold;
+			color: #ffffff;
+		}
+
+		.card-subtitle {
+			position: absolute;
+			font-size: 1em;
+			top: 52%;
+			width: 100%;
+			color: #f8f8f8;
+		}
+	}
+
+	button[fab].fab-map {
+  		top: calc(100% - 35px);
+  		z-index: 50;
+	}
+}

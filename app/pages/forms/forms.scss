@@ -1,0 +1,13 @@
+.forms {
+	ion-item-divider {
+		background-color: rgba(234, 234, 234, .3);
+	}
+	.necessary {
+		border-left: 1px solid green;
+	}
+
+	.error {
+		background-color: rgba(255, 0, 0, .4);
+		color: white;
+	}
+}
