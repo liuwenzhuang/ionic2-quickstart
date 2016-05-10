@@ -1,0 +1,13 @@
+.gestures {
+  ion-card > .item:first-child, ion-card > ion-item-sliding:first-child .item {
+    border-top: 1px solid #dedede;
+  }
+
+  ion-card > .item > .item-inner > .input-wrapper {
+    border-bottom: 1px solid #dedede !important;
+  }
+
+  ion-card > .item:last-child, ion-card > ion-item-sliding:last-child .item {
+    border-bottom: 1px solid #dedede;
+  }
+}
