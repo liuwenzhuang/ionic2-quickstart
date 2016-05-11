@@ -10,12 +10,8 @@
 	</button>
 	<ion-title>products</ion-title>
 </ion-navbar>
-<ion-toolbar>
-	<button primary menuToggle>
-		<ion-icon name='menu'></ion-icon>
-	</button>
-	<ion-title>products</ion-title>
-</ion-toolbar>
 <ion-content padding class="products">
-	<button danger full (click)="goOtherPage()"></button>
+	<button light full [navPush]="pushPage" [navParams]="params">NavPush Usage 1</button>
+	<button danger full [navPush]="[pushPage, params]">Go to other page</button>
+	<button primary block (click)="goOtherPage()">Go Sub Page</button>
 </ion-content>

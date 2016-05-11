@@ -16,7 +16,8 @@ import {TabsPage} from './pages/tabInMenu/tabs/tabs';
     //template: '<ion-nav [root]="rootPage"></ion-nav>',
     templateUrl: 'build/app.html',
     config: {
-        tabbarPlacement: 'bottom'
+        mode: 'ios'
+        //tabbarPlacement: 'bottom'
     } // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {

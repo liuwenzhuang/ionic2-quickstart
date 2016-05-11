@@ -1,5 +1,5 @@
 import {Page, NavController, IonicApp} from 'ionic-angular';
-import {CheckboxPage} from '../../checkbox/checkbox';
+import {ProductGraphPage} from '../product-graph/product-graph';
 
 /*
   Generated class for the ProductsPage page.
@@ -18,10 +18,15 @@ export class ProductsPage {
   constructor(nav, app) {
     this.nav = nav;
     this.app = app;
+
+    this.pushPage = ProductGraphPage;
+    this.params = {
+      name: 'K Graph'
+    };
   }
 
   goOtherPage() {
-    this.nav.push(CheckboxPage);
+    this.nav.push(this.pushPage, this.params);
   }
 
   ngAfterViewInit() {

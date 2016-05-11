@@ -16,7 +16,7 @@
 		<ion-item-divider lighter>
 			Characters
 		</ion-item-divider>
-		<ion-item *ngFor = '#item of items'>
+		<ion-item *ngFor = '#item of items' detail-push>
 			<ion-label>{{ item.title }}</ion-label>
 			<ion-checkbox checked= "{{ item.isChecked }}" disabled= "{{ item.isDisabled }}" [(ngModel)] = "item.isChecked"></ion-checkbox>
 		</ion-item>

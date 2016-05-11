@@ -29,3 +29,25 @@
 // App iOS Only Sass
 // --------------------------------------------------
 // CSS that should only apply to the iOS app
+ion-buttons {
+	display: flex;
+	flex-direction: row;
+}
+
+ion-buttons[end], ion-buttons[right] {
+	flex-direction: row-reverse;
+}
+
+ion-buttons > .bar-button-menutoggle {
+	order: 0;
+	margin: 0;
+	padding: 0;
+}
+
+ion-buttons > .button, ion-buttons > .bar-button {
+	flex: 0 1 auto;
+}
+
+ion-buttons > .bar-button {
+	min-width: 36px;
+}
